@@ -10,6 +10,11 @@ namespace Kursach.DbContextDate
 {
     public class DbContextDataFillialTwo : DbContext
     {
+        public DbContextDataFillialTwo()
+        {
+            Database.EnsureCreated();
+        }
+
         public DbSet<Patient> Patients { get; set; }
 
         public DbSet<Doctor> Doctors { get; set; }
