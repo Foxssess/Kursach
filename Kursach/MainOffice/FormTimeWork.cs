@@ -28,6 +28,8 @@ namespace Kursach.MainOffice
         {
             dbContext = new DbContextData(connectionString);
             dataGridViewWorkTime.DataSource = dbContext.WorkTimes.ToList();
+            dataGridViewWorkTime.Columns[0].Visible = false;
+            dataGridViewWorkTime.Columns[1].Visible = false;
             var doctorIds = dbContext.Doctors.ToList();
             for (int i = 0; doctorIds.Count > i; i++)
             {

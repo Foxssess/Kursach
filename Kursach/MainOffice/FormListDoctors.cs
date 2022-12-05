@@ -26,6 +26,7 @@ namespace Kursach.MainOffice
         {
             dbContext = new DbContextData(connectionString);
             dataGridViewDoctors.DataSource = dbContext.Doctors.ToList();
+            dataGridViewDoctors.Columns[0].Visible = false;
         }
 
         private void buttonAddDoctors_Click(object sender, EventArgs e)

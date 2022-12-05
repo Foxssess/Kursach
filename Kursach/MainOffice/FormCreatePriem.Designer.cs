@@ -33,8 +33,6 @@
             this.comboBoxService = new System.Windows.Forms.ComboBox();
             this.dataGridViewPriem = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxListDoctors = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonCreatePriem = new System.Windows.Forms.Button();
             this.buttonMoveCreatePatient = new System.Windows.Forms.Button();
@@ -42,8 +40,6 @@
             this.textBoxSearchPriem = new System.Windows.Forms.TextBox();
             this.buttonMoveListDoctors = new System.Windows.Forms.Button();
             this.buttonMoveTimeWork = new System.Windows.Forms.Button();
-            this.comboBoxPatients = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.textBoxCost = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.comboBoxRoom = new System.Windows.Forms.ComboBox();
@@ -51,19 +47,25 @@
             this.buttonRefresh = new System.Windows.Forms.Button();
             this.buttonShowAll = new System.Windows.Forms.Button();
             this.buttonChange = new System.Windows.Forms.Button();
+            this.dataGridViewListPatients = new System.Windows.Forms.DataGridView();
+            this.dataGridViewListDoctors = new System.Windows.Forms.DataGridView();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPriem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListPatients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListDoctors)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePickerPriem
             // 
-            this.dateTimePickerPriem.Location = new System.Drawing.Point(511, 132);
+            this.dateTimePickerPriem.Location = new System.Drawing.Point(252, 538);
             this.dateTimePickerPriem.Name = "dateTimePickerPriem";
             this.dateTimePickerPriem.Size = new System.Drawing.Size(200, 23);
             this.dateTimePickerPriem.TabIndex = 0;
             // 
             // textBoxPriemTime
             // 
-            this.textBoxPriemTime.Location = new System.Drawing.Point(727, 132);
+            this.textBoxPriemTime.Location = new System.Drawing.Point(471, 538);
             this.textBoxPriemTime.Name = "textBoxPriemTime";
             this.textBoxPriemTime.Size = new System.Drawing.Size(156, 23);
             this.textBoxPriemTime.TabIndex = 1;
@@ -75,7 +77,7 @@
             "Консультация",
             "Чистка зубов",
             "Установка пломбы"});
-            this.comboBoxService.Location = new System.Drawing.Point(545, 88);
+            this.comboBoxService.Location = new System.Drawing.Point(106, 480);
             this.comboBoxService.Name = "comboBoxService";
             this.comboBoxService.Size = new System.Drawing.Size(291, 23);
             this.comboBoxService.TabIndex = 2;
@@ -83,42 +85,25 @@
             // dataGridViewPriem
             // 
             this.dataGridViewPriem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPriem.Location = new System.Drawing.Point(12, 47);
+            this.dataGridViewPriem.Location = new System.Drawing.Point(22, 44);
             this.dataGridViewPriem.Name = "dataGridViewPriem";
             this.dataGridViewPriem.RowTemplate.Height = 25;
-            this.dataGridViewPriem.Size = new System.Drawing.Size(449, 397);
+            this.dataGridViewPriem.Size = new System.Drawing.Size(871, 167);
             this.dataGridViewPriem.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(646, 114);
+            this.label1.Location = new System.Drawing.Point(403, 520);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 15);
             this.label1.TabIndex = 5;
             this.label1.Text = "Дата и время приёма";
             // 
-            // comboBoxListDoctors
-            // 
-            this.comboBoxListDoctors.FormattingEnabled = true;
-            this.comboBoxListDoctors.Location = new System.Drawing.Point(511, 173);
-            this.comboBoxListDoctors.Name = "comboBoxListDoctors";
-            this.comboBoxListDoctors.Size = new System.Drawing.Size(372, 23);
-            this.comboBoxListDoctors.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(653, 155);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 15);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Список врачей";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(674, 70);
+            this.label3.Location = new System.Drawing.Point(259, 460);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 8;
@@ -126,7 +111,7 @@
             // 
             // buttonCreatePriem
             // 
-            this.buttonCreatePriem.Location = new System.Drawing.Point(509, 298);
+            this.buttonCreatePriem.Location = new System.Drawing.Point(384, 576);
             this.buttonCreatePriem.Name = "buttonCreatePriem";
             this.buttonCreatePriem.Size = new System.Drawing.Size(172, 32);
             this.buttonCreatePriem.TabIndex = 9;
@@ -136,7 +121,7 @@
             // 
             // buttonMoveCreatePatient
             // 
-            this.buttonMoveCreatePatient.Location = new System.Drawing.Point(509, 344);
+            this.buttonMoveCreatePatient.Location = new System.Drawing.Point(22, 220);
             this.buttonMoveCreatePatient.Name = "buttonMoveCreatePatient";
             this.buttonMoveCreatePatient.Size = new System.Drawing.Size(172, 33);
             this.buttonMoveCreatePatient.TabIndex = 10;
@@ -163,7 +148,7 @@
             // 
             // buttonMoveListDoctors
             // 
-            this.buttonMoveListDoctors.Location = new System.Drawing.Point(727, 344);
+            this.buttonMoveListDoctors.Location = new System.Drawing.Point(485, 218);
             this.buttonMoveListDoctors.Name = "buttonMoveListDoctors";
             this.buttonMoveListDoctors.Size = new System.Drawing.Size(156, 33);
             this.buttonMoveListDoctors.TabIndex = 13;
@@ -173,7 +158,7 @@
             // 
             // buttonMoveTimeWork
             // 
-            this.buttonMoveTimeWork.Location = new System.Drawing.Point(511, 394);
+            this.buttonMoveTimeWork.Location = new System.Drawing.Point(282, 219);
             this.buttonMoveTimeWork.Name = "buttonMoveTimeWork";
             this.buttonMoveTimeWork.Size = new System.Drawing.Size(170, 33);
             this.buttonMoveTimeWork.TabIndex = 14;
@@ -181,26 +166,9 @@
             this.buttonMoveTimeWork.UseVisualStyleBackColor = true;
             this.buttonMoveTimeWork.Click += new System.EventHandler(this.buttonMoveTimeWork_Click);
             // 
-            // comboBoxPatients
-            // 
-            this.comboBoxPatients.FormattingEnabled = true;
-            this.comboBoxPatients.Location = new System.Drawing.Point(511, 216);
-            this.comboBoxPatients.Name = "comboBoxPatients";
-            this.comboBoxPatients.Size = new System.Drawing.Size(372, 23);
-            this.comboBoxPatients.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(674, 199);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 15);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Пациенты";
-            // 
             // textBoxCost
             // 
-            this.textBoxCost.Location = new System.Drawing.Point(511, 260);
+            this.textBoxCost.Location = new System.Drawing.Point(403, 480);
             this.textBoxCost.Name = "textBoxCost";
             this.textBoxCost.Size = new System.Drawing.Size(170, 23);
             this.textBoxCost.TabIndex = 17;
@@ -208,7 +176,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(565, 242);
+            this.label5.Location = new System.Drawing.Point(471, 460);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 15);
             this.label5.TabIndex = 19;
@@ -217,15 +185,15 @@
             // comboBoxRoom
             // 
             this.comboBoxRoom.FormattingEnabled = true;
-            this.comboBoxRoom.Location = new System.Drawing.Point(727, 260);
+            this.comboBoxRoom.Location = new System.Drawing.Point(579, 480);
             this.comboBoxRoom.Name = "comboBoxRoom";
-            this.comboBoxRoom.Size = new System.Drawing.Size(156, 23);
+            this.comboBoxRoom.Size = new System.Drawing.Size(213, 23);
             this.comboBoxRoom.TabIndex = 20;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(784, 242);
+            this.label6.Location = new System.Drawing.Point(652, 460);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 15);
             this.label6.TabIndex = 21;
@@ -253,7 +221,7 @@
             // 
             // buttonChange
             // 
-            this.buttonChange.Location = new System.Drawing.Point(727, 298);
+            this.buttonChange.Location = new System.Drawing.Point(669, 220);
             this.buttonChange.Name = "buttonChange";
             this.buttonChange.Size = new System.Drawing.Size(156, 32);
             this.buttonChange.TabIndex = 24;
@@ -261,11 +229,51 @@
             this.buttonChange.UseVisualStyleBackColor = true;
             this.buttonChange.Click += new System.EventHandler(this.buttonChange_Click);
             // 
+            // dataGridViewListPatients
+            // 
+            this.dataGridViewListPatients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewListPatients.Location = new System.Drawing.Point(22, 276);
+            this.dataGridViewListPatients.Name = "dataGridViewListPatients";
+            this.dataGridViewListPatients.RowTemplate.Height = 25;
+            this.dataGridViewListPatients.Size = new System.Drawing.Size(430, 166);
+            this.dataGridViewListPatients.TabIndex = 25;
+            this.dataGridViewListPatients.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewListPatients_CellClick);
+            // 
+            // dataGridViewListDoctors
+            // 
+            this.dataGridViewListDoctors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewListDoctors.Location = new System.Drawing.Point(477, 276);
+            this.dataGridViewListDoctors.Name = "dataGridViewListDoctors";
+            this.dataGridViewListDoctors.RowTemplate.Height = 25;
+            this.dataGridViewListDoctors.Size = new System.Drawing.Size(416, 166);
+            this.dataGridViewListDoctors.TabIndex = 26;
+            this.dataGridViewListDoctors.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewListDoctors_CellClick);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(200, 258);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 15);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Пациенты";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(652, 258);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 15);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Список врачей";
+            // 
             // FormCreatePriem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 464);
+            this.ClientSize = new System.Drawing.Size(905, 693);
+            this.Controls.Add(this.dataGridViewListDoctors);
+            this.Controls.Add(this.dataGridViewListPatients);
             this.Controls.Add(this.buttonChange);
             this.Controls.Add(this.buttonShowAll);
             this.Controls.Add(this.buttonRefresh);
@@ -274,7 +282,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBoxCost);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBoxPatients);
             this.Controls.Add(this.buttonMoveTimeWork);
             this.Controls.Add(this.buttonMoveListDoctors);
             this.Controls.Add(this.textBoxSearchPriem);
@@ -283,7 +290,6 @@
             this.Controls.Add(this.buttonCreatePriem);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBoxListDoctors);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewPriem);
             this.Controls.Add(this.comboBoxService);
@@ -293,6 +299,8 @@
             this.Text = "FormCreatePriem";
             this.Load += new System.EventHandler(this.FormCreatePriem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPriem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListPatients)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListDoctors)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,8 +313,6 @@
         private ComboBox comboBoxService;
         private DataGridView dataGridViewPriem;
         private Label label1;
-        private ComboBox comboBoxListDoctors;
-        private Label label2;
         private Label label3;
         private Button buttonCreatePriem;
         private Button buttonMoveCreatePatient;
@@ -314,8 +320,6 @@
         private TextBox textBoxSearchPriem;
         private Button buttonMoveListDoctors;
         private Button buttonMoveTimeWork;
-        private ComboBox comboBoxPatients;
-        private Label label4;
         private TextBox textBoxCost;
         private Label label5;
         private ComboBox comboBoxRoom;
@@ -323,5 +327,9 @@
         private Button buttonRefresh;
         private Button buttonShowAll;
         private Button buttonChange;
+        private DataGridView dataGridViewListPatients;
+        private DataGridView dataGridViewListDoctors;
+        private Label label4;
+        private Label label2;
     }
 }

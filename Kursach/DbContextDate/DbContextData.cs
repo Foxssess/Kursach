@@ -70,16 +70,16 @@ namespace Kursach.DbContextDate
 
               );
             modelBuilder.Entity<Reception>().HasData(
-               new Reception { Id = 1, Cost = "1000", Data = new DateOnly(2022, 01, 14), Doctor = "Хафизова", NameService = "Консультация", Room = "Кабинет 1", Time = "17:20", Patient = "Романов" },
-               new Reception { Id = 2, Cost = "2500", Data = new DateOnly(2021, 06, 01), Doctor = "Хасанов", NameService = "Чистка зубов", Room = "Кабинет 2", Time = "15:13", Patient = "Хафизов" },
-               new Reception { Id = 3, Cost = "10000", Data = new DateOnly(2022, 04, 19), Doctor = "Минвалеев", NameService = "Установка пломбы", Room = "Кабинет 3", Time = "07:30", Patient = "Рагинов" },
-               new Reception { Id = 4, Cost = "15000", Data = new DateOnly(2022, 03, 15), Doctor = "Папичев", NameService = "Установка брекетов", Room = "Кабинет 4", Time = "09:00", Patient = "Кергилов" },
-               new Reception { Id = 5, Cost = "2500", Data = new DateOnly(2019, 06, 13), Doctor = "Панков", NameService = "Чистка зубов", Room = "Кабинет 5", Time = "12:13", Patient = "Лазарева" },
-               new Reception { Id = 6, Cost = "15000", Data = new DateOnly(2022, 02, 13), Doctor= "Андреев", NameService = "Установка брекетов", Room = "Кабинет 6", Time = "15:17", Patient = "Тихонов" },
-               new Reception { Id = 7, Cost = "10000", Data = new DateOnly(2021, 08, 19), Doctor = "Дедов", NameService = "Установка пломбы", Room = "Кабинет 7", Time = "18:45", Patient = "Гасанов" },
-               new Reception { Id = 8, Cost = "1000", Data = new DateOnly(2021, 03, 11), Doctor = "Клоунов", NameService = "Консультация", Room = "Кабинет 8", Time = "20:15", Patient = "Субботина" },
-               new Reception { Id = 9, Cost = "10000", Data = new DateOnly(2022, 07, 25), Doctor = "Бидонов", NameService = "Установка пломбы", Room = "Кабинет 9", Time = "11:45", Patient = "Яшкина" },
-               new Reception { Id = 10, Cost = "15000", Data = new DateOnly(2020, 06, 15), Doctor  = "Дудков", NameService = "Установка брекетов", Room = "Кабинет 10", Time = "13:27", Patient = "Мишина" }
+               new Reception { Id = 1, Cost = "1000", Data = new DateOnly(2022, 01, 14), DoctorId = 1, NameService = "Консультация", Room = "Кабинет 1", Time = "17:20", PatientId = 1 },
+               new Reception { Id = 2, Cost = "2500", Data = new DateOnly(2021, 06, 01), DoctorId = 2, NameService = "Чистка зубов", Room = "Кабинет 2", Time = "15:13", PatientId = 2 },
+               new Reception { Id = 3, Cost = "10000", Data = new DateOnly(2022, 04, 19), DoctorId = 3, NameService = "Установка пломбы", Room = "Кабинет 3", Time = "07:30", PatientId = 3 },
+               new Reception { Id = 4, Cost = "15000", Data = new DateOnly(2022, 03, 15), DoctorId = 4, NameService = "Установка брекетов", Room = "Кабинет 4", Time = "09:00", PatientId = 4 },
+               new Reception { Id = 5, Cost = "2500", Data = new DateOnly(2019, 06, 13), DoctorId = 5,NameService = "Чистка зубов", Room = "Кабинет 5", Time = "12:13", PatientId = 5 },
+               new Reception { Id = 6, Cost = "15000", Data = new DateOnly(2022, 02, 13), DoctorId = 6, NameService = "Установка брекетов", Room = "Кабинет 6", Time = "15:17", PatientId = 6 },
+               new Reception { Id = 7, Cost = "10000", Data = new DateOnly(2021, 08, 19), DoctorId = 7,NameService = "Установка пломбы", Room = "Кабинет 7", Time = "18:45", PatientId = 7 },
+               new Reception { Id = 8, Cost = "1000", Data = new DateOnly(2021, 03, 11), DoctorId =  8,NameService = "Консультация", Room = "Кабинет 8", Time = "20:15", PatientId = 8 },
+               new Reception { Id = 9, Cost = "10000", Data = new DateOnly(2022, 07, 25), DoctorId = 9,NameService = "Установка пломбы", Room = "Кабинет 9", Time = "11:45", PatientId = 9 },
+               new Reception { Id = 10, Cost = "15000", Data = new DateOnly(2020, 06, 15), DoctorId = 10,NameService = "Установка брекетов", Room = "Кабинет 10", Time = "13:27", PatientId = 10 }
 
                 );
 

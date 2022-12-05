@@ -28,6 +28,8 @@ namespace Kursach.MainOffice
             dbContext = new DbContextData(connectionString);
             dbContext.Database.EnsureCreated();
             dataGridViewService.DataSource = dbContext.Services.ToArray();
+            dataGridViewService.Columns[0].Visible = false;
+            dataGridViewService.Columns[3].Visible = false;
 
         }
 

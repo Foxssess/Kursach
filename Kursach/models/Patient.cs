@@ -22,6 +22,5 @@ namespace Kursach.models
         public string? Polis { get; set; }
         public string? Passport { get; set; }
 
-        
     }
 }

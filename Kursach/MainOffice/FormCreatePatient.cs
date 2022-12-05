@@ -45,7 +45,8 @@ namespace Kursach.MainOffice
         {
             dbContext = new DbContextData(connectionString);
             dataGridViewPatients.DataSource = dbContext.Patients.ToArray();
-                               
+            dataGridViewPatients.Columns[0].Visible = false;
+
         }
 
         private void buttonChangePatient_Click(object sender, EventArgs e)
